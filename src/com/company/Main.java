@@ -15,7 +15,7 @@ public class Main {
         duck.waddle();
 
         duck2.waddle();
-        System.out.println(duck.name + "'s life expectancy is " + duck.life_expectancy);
+        System.out.println(duck.get_name() + "'s life expectancy is " + duck.get_life_expectancy());
 
     }
 }
