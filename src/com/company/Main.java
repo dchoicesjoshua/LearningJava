@@ -17,5 +17,7 @@ public class Main {
         duck2.waddle();
         System.out.println(duck.get_name() + "'s life expectancy is " + duck.get_life_expectancy());
 
+        duck.setFavorite_food("ice cream");
+        System.out.println(duck.getFavorite_food());
     }
 }

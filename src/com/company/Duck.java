@@ -12,6 +12,14 @@ public class Duck {
 
     }
 
+    public void setFavorite_food(String favorite_food){
+        this.favorite_food = favorite_food;
+    }
+
+    public String getFavorite_food(){
+        return this.favorite_food;
+    }
+
     public String get_name(){
         return this.name;
     }
