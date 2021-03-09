@@ -11,6 +11,14 @@ public class Duck {
         this.life_expectancy = life_expectancy;
         this.favorite_food = favorite_food;
     }
+    public void run(){
+        System.out.println(this.get_name() + " is running");
+    }
+
+
+    public void swim(){
+        System.out.println(this.get_name() + " is swimming");
+    }
 
     public void setFavorite_food(String favorite_food){
         this.favorite_food = favorite_food;
@@ -31,6 +39,7 @@ public class Duck {
     public void waddle(){
         System.out.println(this.name + " is waddling.");
         this.life_expectancy++;
+
     }
 }
 

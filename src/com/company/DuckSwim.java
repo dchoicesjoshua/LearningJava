@@ -8,6 +8,6 @@ public class DuckSwim extends Duck {
     }
 
     public void swim(){
-        System.out.println(this.get_name() + " is swimming");
+        System.out.println(this.get_name() + " is swimming too");
     }
 }
