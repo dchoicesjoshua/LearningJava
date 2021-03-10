@@ -22,15 +22,26 @@ public class ClashRoyale {
 
 
     //constructor
-    public ClashRoyale (String name, int health, int attack_damage, String type){
+    public ClashRoyale (String name, int health, int speed, String type, String rarity, int elixir){
         this.name = name;
         this.health = health;
-        this.attack_damage = attack_damage;
+        this.speed = speed;
         this.type = type;
+        this.rarity = rarity;
+        this.elixir = elixir;
+    }
+
+    public int getAttachDamage(){
+        return this.attack_damage;
+    }
+
+    public void setAttachDamage(int attack_damage){
+        this.attack_damage = attack_damage ;
     }
 
     public String toString() {
-        String result = name + " " + health + " " + attack_damage +  " " +  this.type;
+        String result = name + " has " + health + " health " + attack_damage + " damage. He is a " + type + " He is" +
+                " a " + rarity + " and he is " + elixir + " elixir";
         return result ;
     }
 
