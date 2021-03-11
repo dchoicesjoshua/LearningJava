@@ -17,7 +17,7 @@ public class Main {
         PrintClash(clashList);
 
 
-        if (wizard.getAttachDamage() > mega.getAttachDamage()) {
+        if (wizard.getAttackDamage() > mega.getAttackDamage()) {
             System.out.println("wizard win");
         }
 
@@ -38,7 +38,7 @@ public class Main {
 
     private static void PrintClash(ArrayList<ClashRoyale> list) {
         for(ClashRoyale item: list){
-            System.out.println("Attack Damage:" + Integer.toString(item.getAttachDamage()));
+            System.out.println("Attack Damage:" + Integer.toString(item.getAttackDamage()));
         }
     }
 

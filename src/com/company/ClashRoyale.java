@@ -31,11 +31,11 @@ public class ClashRoyale {
         this.elixir = elixir;
     }
 
-    public int getAttachDamage(){
+    public int getAttackDamage(){
         return this.attack_damage;
     }
 
-    public void setAttachDamage(int attack_damage){
+    public void setAttackDamage(int attack_damage){
         this.attack_damage = attack_damage ;
     }
 
