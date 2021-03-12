@@ -29,6 +29,7 @@ public class ClashRoyale {
         this.type = type;
         this.rarity = rarity;
         this.elixir = elixir;
+        this.setAttackDamage(111);
     }
 
     public int getAttackDamage(){
@@ -40,7 +41,7 @@ public class ClashRoyale {
     }
 
     public String toString() {
-        String result = name + " has " + health + " health " + attack_damage + " damage. He is a " + type + " He is" +
+        String result = "ToString from ClashRoyale :" +  name + " has " + health + " health " + attack_damage + " damage. He is a " + type + " He is" +
                 " a " + rarity + " and he is " + elixir + " elixir";
         return result ;
     }

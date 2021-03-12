@@ -7,4 +7,8 @@ public class Wizard extends ClashRoyale {
         this.setAttackDamage(232);
     }
 
+    public String toString() {
+        String result = "ToString from Wizard ";
+        return result ;
+    }
 }
