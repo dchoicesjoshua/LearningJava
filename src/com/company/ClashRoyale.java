@@ -22,10 +22,8 @@ public class ClashRoyale {
 
 
     //constructor
-    public ClashRoyale (String name, int health, String type, String rarity, int elixir){
+    public ClashRoyale (String name, String rarity, int elixir){
         this.name = name;
-        this.health = health;
-        this.type = type;
         this.rarity = rarity;
         this.elixir = elixir;
         this.setAttackDamage(111);
@@ -35,6 +33,27 @@ public class ClashRoyale {
         return this.attack_damage;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public String getType(){
+        return this.type;
+    }
+
+    public int getSpeed(){
+        return this.speed;
+    }
+
+    public int getHealth(){
+        return this.health;
+    }
+
+    public void setName(String name){
+        this.name = name ;
+    }
+
+
     public void setAttackDamage(int attack_damage){
         this.attack_damage = attack_damage ;
     }
@@ -43,10 +62,22 @@ public class ClashRoyale {
         this.speed = speed;
     }
 
+    public void setType(String type){
+        this.type = type;
+    }
+
+    public void setHealth(int health){
+        this.health = health;
+    }
+
 
     public String toString() {
-        String result = "ToString from ClashRoyale :" +  name + " has " + health + " health " + attack_damage + " damage. He is a " + type + " He is" +
-                " a " + rarity + " and he is " + elixir + " elixir" + " his speed is " + speed;
+        String result = "ToString from ";
+        result = result + "name is " +  this.name + ":";
+        result = result + "type is " +  this.type + ":";
+        result = result + " speed is " + this.speed + ":";
+        result = result + " damage is " + this.attack_damage + ":";
+        result = result + " health is " + this.health;
         return result ;
     }
 
