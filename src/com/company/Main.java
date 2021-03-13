@@ -8,25 +8,21 @@ public class Main {
     //Practice: https://www.lynda.com/course-tutorials/Exercise-Objects-Java/2242051/2257759-4.html?autoplay=true
     public static void main(String[] args) {
 
-        ClashRoyale clash = new ClashRoyale("clash",200,111, "air","rare",5);
+        ClashRoyale clash = new ClashRoyale("clash",0,"air","rare",0);
         Wizard wizard = new Wizard("wizard",598,232, "air","rare",5);
-        MegaKnight mega = new MegaKnight("Mega",252,230,"air","common",3);
+        MegaKnight mega = new MegaKnight("Megaknight",3300,"ground","legendary",7);
+        Barbarians barbarians = new Barbarians("Barbarians",3300,"ground","common",5);
 
-        ArrayList<ClashRoyale> card_list = new ArrayList<ClashRoyale>();
-        card_list.add(clash);
-        card_list.add(wizard);
-        card_list.add(mega);
+        ArrayList<ClashRoyale> array_list = new ArrayList<ClashRoyale>();
+        array_list.add(clash);
+        array_list.add(wizard);
+        array_list.add(mega);
+        array_list.add(barbarians);
 
-        for (ClashRoyale card: card_list) {
+        for (ClashRoyale card: array_list) {
             System.out.println(card);
+
         }
-
-
-
-        if (wizard.getAttackDamage() > mega.getAttackDamage()) {
-            System.out.println("wizard win");
-        }
-
     }
 
 

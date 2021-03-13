@@ -22,10 +22,9 @@ public class ClashRoyale {
 
 
     //constructor
-    public ClashRoyale (String name, int health, int speed, String type, String rarity, int elixir){
+    public ClashRoyale (String name, int health, String type, String rarity, int elixir){
         this.name = name;
         this.health = health;
-        this.speed = speed;
         this.type = type;
         this.rarity = rarity;
         this.elixir = elixir;
@@ -40,9 +39,14 @@ public class ClashRoyale {
         this.attack_damage = attack_damage ;
     }
 
+    public void setSpeed(int speed){
+        this.speed = speed;
+    }
+
+
     public String toString() {
         String result = "ToString from ClashRoyale :" +  name + " has " + health + " health " + attack_damage + " damage. He is a " + type + " He is" +
-                " a " + rarity + " and he is " + elixir + " elixir";
+                " a " + rarity + " and he is " + elixir + " elixir" + " his speed is " + speed;
         return result ;
     }
 
