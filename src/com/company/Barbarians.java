@@ -2,12 +2,14 @@ package com.company;
 
 public class Barbarians extends ClashRoyale {
 
-    public Barbarians (String name, String rarity, int elixir){
-        super(name, rarity, elixir);
+    public Barbarians (String name){
+        super(name);
         this.setAttackDamage(159);
-        this.setSpeed(2);
+        this.setSpeed(-1);
         this.setType("ground");
-
+        this.setRarity("common");
+        this.setElixir(5);
+        this.setHealth(450);
     }
 
 

@@ -22,11 +22,16 @@ public class ClashRoyale {
 
 
     //constructor
-    public ClashRoyale (String name, String rarity, int elixir){
-        this.name = name;
-        this.rarity = rarity;
-        this.elixir = elixir;
-        this.setAttackDamage(111);
+    public ClashRoyale (String name){
+        this.setName(name);
+    }
+
+    public void rage(int increasedBy) {
+        this.speed = this.speed + increasedBy;
+    }
+
+    public void rage() {
+        this.speed = this.speed + 1;
     }
 
     public int getAttackDamage(){
@@ -34,7 +39,8 @@ public class ClashRoyale {
     }
 
     public String getName(){
-        return this.name;
+        String namePrint = " name is " +  this.name + ": ";
+        return namePrint;
     }
 
     public String getType(){
@@ -49,17 +55,38 @@ public class ClashRoyale {
         return this.health;
     }
 
+    public int getElixir(){
+        return this.elixir;
+    }
+
+    public String getRarity(){
+        return this.rarity;
+    }
+
+
+
+
     public void setName(String name){
         this.name = name ;
     }
 
+    public void setRarity(String rarity){
+        this.rarity = rarity;
+    }
+
+    public void setElixir(int elixir){
+        this.elixir = elixir;
+    }
 
     public void setAttackDamage(int attack_damage){
         this.attack_damage = attack_damage ;
     }
 
     public void setSpeed(int speed){
-        this.speed = speed;
+        if (speed < 0)
+            System.out.println("Speed cannot be negative:" +  this.getName());
+        else
+            this.speed = speed;
     }
 
     public void setType(String type){
@@ -71,9 +98,10 @@ public class ClashRoyale {
     }
 
 
+
+
     public String toString() {
-        String result = "ToString from ";
-        result = result + "name is " +  this.name + ":";
+        String result = this.getName();
         result = result + "type is " +  this.type + ":";
         result = result + " speed is " + this.speed + ":";
         result = result + " damage is " + this.attack_damage + ":";
